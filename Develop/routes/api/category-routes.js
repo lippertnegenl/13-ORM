@@ -11,6 +11,7 @@ router.get('/',async (req, res) => {
 
   res.json(categories);
 }catch(error){
+  console.log(error)
   res.status(500).json({error:"failed to get categories"});
 }
 });
